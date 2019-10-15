@@ -1,0 +1,7 @@
+{
+  "name": "AquaPlant",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

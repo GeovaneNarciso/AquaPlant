@@ -1,0 +1,26 @@
+.ion-padding {
+    --padding: 10px;
+};
+.custom-icon-home {
+    color: #9acd32;
+    font-size: 40px;
+    position: left;
+    padding-right: 5px;
+};
+.custom-item-home {
+    padding: 5px;
+    text-align: right;
+};
+img {
+    display:block;
+    width:75%;
+    height:auto;
+    margin: auto;
+};
+button {
+    background: none;
+    padding: 10px;
+}
+ion-list {
+    padding: 30px;
+};
