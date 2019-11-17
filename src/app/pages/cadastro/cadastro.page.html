@@ -1,31 +1,69 @@
 <ion-header>
-    <ion-tab-bar slot="right">
-      <ion-title>
-        Localização
-      </ion-title>
-      <ion-buttons>
-        <button ion-button icon-only solid expand="block" 
-        routerLink="/home1" routerDirection="root">
-          <ion-icon name="home" size="large" ></ion-icon>
-        </button>
-        <ion-icon name="person" size="large"></ion-icon>
-      </ion-buttons>
-    </ion-tab-bar>
-</ion-header>
-<ion-content>
-
+  <ion-row>
+    <ion-col>
+      <div>
+        <ion-title style="padding-top: 15px;">
+          Localização
+        </ion-title>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-buttons>
+          <button ion-button icon-only solid expand="block" routerLink="/home1" routerDirection="root" >
+            <ion-icon name="home" size="large" class="custom-icon-cadastro"></ion-icon>
+          </button>
+        </ion-buttons>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+          <ion-buttons>
+            <button ion-button icon-only solid expand="block" routerLink="/none" routerDirection="none" >
+              <ion-icon name="contact" size="large"></ion-icon>
+            </button>
+          </ion-buttons>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-header>
+<ion-content class="ion-padding">
+  <ion-grid id="grid1">  
+    <ion-row>
+      <ion-col>
+        <div>
+          <img src="assets/img/maps.png"/>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-<ion-footer class="ion-padding">
-  <button ion-item lines="none">
-      <ion-icon name="add-circle" size="large"></ion-icon><br>
-      <ion-label>Add macrófita</ion-label>
-  </button>
-  <button ion-item lines="none">
-      <ion-icon name="create" size="large"></ion-icon><br>
-      <ion-label>Add anotações</ion-label>
-  </button>
-  <button ion-item lines="none">
-      <ion-icon name="locate" size="large"></ion-icon><br>
-      <ion-label></ion-label>
-  </button>
+<ion-footer>
+  <ion-row padding-left="40px">
+    <ion-col>
+      <div style="width: 100%; margin: auto">
+        <button ion-item lines="none" class="custom-item-home" expand="block" 
+                routerLink="/add-macrofita" routerDirection="root">
+          <ion-icon name="add-circle" size="large" class="custom-icon-cadastro"></ion-icon><br>
+          <ion-label>Add macrófita</ion-label>
+        </button>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <button ion-item lines="none" class="custom-item-home">
+          <ion-icon name="create" size="large" class="custom-icon-cadastro"></ion-icon><br>
+          <ion-label>Add anotações</ion-label>
+        </button>
+      </div>
+    </ion-col>
+    <ion-col text-center>
+      <div>
+        <button ion-item lines="none" class="custom-item-home">
+          <ion-icon name="locate" size="large" class="custom-icon-cadastro"></ion-icon><br>
+          <ion-label></ion-label>
+        </button>
+      </div>
+    </ion-col>
+  </ion-row>
 </ion-footer>

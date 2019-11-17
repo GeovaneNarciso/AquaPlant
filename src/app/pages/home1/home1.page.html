@@ -1,33 +1,63 @@
 <ion-header>
-    <ion-tab-bar slot="right">
-      <ion-title>
-      </ion-title>
-      <ion-buttons end>
-        <button ion-button icon-only solid>
-          <ion-icon name="person" size="large"></ion-icon>
-        </button>
-      </ion-buttons>
-    </ion-tab-bar>
-  </ion-header>
-  <ion-content class="ion-padding">
-    <img src="assets/img/mAyvSfIaRV6N1a4CFpFs_AquaPlant_Logo.png"/>
-    <ion-list>
-      <button ion-item lines="none" class="custom-item-home" expand="block" 
-      routerLink="/cadastro" routerDirection="root">
-        <ion-icon name="pin" class="custom-icon-home" ></ion-icon>
-        Cadastro Macrófitas
+  <ion-tab-bar slot="right">
+    <ion-title>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="contact" size="large"></ion-icon>
       </button>
-      <button ion-item lines="none" class="custom-item-home">
-        <ion-icon name="create" class="custom-icon-home"></ion-icon>
-        Minhas anotações
-      </button>
-      <button ion-item lines="none" class="custom-item-home">
-        <ion-icon name="search" class="custom-icon-home"></ion-icon>
-        Consulta Macrófitas
-      </button>
-      <button ion-item lines="none" class="custom-item-home">
-        <ion-icon name="eye" class="custom-icon-home"></ion-icon>
-        Identificação
-      </button>
-    </ion-list>
-  </ion-content>
+    </ion-buttons>
+  </ion-tab-bar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-grid id="grid1">
+    <ion-row>
+      <ion-col>
+        <div>
+          <img src="assets/img/mAyvSfIaRV6N1a4CFpFs_AquaPlant_Logo.png"/>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row padding-left="40px">
+      <ion-col style="padding-left: 70px;">
+        <div style="width: 100%; margin: auto">
+          <button ion-item lines="none" class="custom-item-home" expand="block" 
+            routerLink="/cadastro" routerDirection="root">
+            <ion-icon name="pin" class="custom-icon-home" ></ion-icon>
+            <ion-label>Cadastro Macrófitas</ion-label>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="padding-left: 70px;">
+        <div>
+          <button ion-item lines="none" class="custom-item-home">
+            <ion-icon name="create" class="custom-icon-home"></ion-icon>
+            Minhas anotações
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="padding-left: 70px;">
+        <div>
+          <button ion-item lines="none" class="custom-item-home">
+            <ion-icon name="search" class="custom-icon-home"></ion-icon>
+            Consulta Macrófitas
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="padding-left: 70px;">
+        <div>
+          <button ion-item lines="none" class="custom-item-home">
+            <ion-icon name="eye" class="custom-icon-home"></ion-icon>
+            Identificação
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

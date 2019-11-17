@@ -16,11 +16,18 @@ img {
     width:75%;
     height:auto;
     margin: auto;
+    padding-bottom: 30px;
 };
 button {
     background: none;
     padding: 10px;
-}
-ion-list {
-    padding: 30px;
+};
+ion-col {
+    
+};
+#grid1 {
+    margin: 0 auto;
+};
+ion-row {
+    justify-content: center;
 };

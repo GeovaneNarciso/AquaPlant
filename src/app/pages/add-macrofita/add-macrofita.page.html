@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-tab-bar slot="right">
+    <ion-title>
+      Informações da planta
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only solid>
+        <ion-icon name="contact" size="large"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-tab-bar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form>
+    <ion-grid id="grid1">
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">Coordenadas</ion-label>
+            <ion-input required type="text" oninput=""></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col text-right>
+          <div>
+            <button ion-item lines="none" class="custom-item-home" routerLink="/comentario" routerDirection="root">
+              <ion-icon name="list-box" size="large" color="primary"></ion-icon><br>
+              <ion-label>Comentários</ion-label>
+            </button>
+          </div>
+        </ion-col>
+      </ion-row><br>
+      <ion-row padding-top="80px">
+        <ion-col>
+          <ion-item>
+            <ion-label>HÁBITO</ion-label>
+            <ion-select>
+              <ion-select-option selected>Flutuante livre</ion-select-option>
+              <ion-select-option>Outra 1</ion-select-option>
+              <ion-select-option>Outra 2</ion-select-option>
+              <ion-select-option>Outra 3</ion-select-option>
+              <ion-select-option>Outra 4</ion-select-option>
+              <ion-select-option>Outra 5</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>FORMA DAS FOLHAS</ion-label>
+            <ion-select>
+              <ion-select-option selected>Ovadas</ion-select-option>
+              <ion-select-option>Outra 1</ion-select-option>
+              <ion-select-option>Outra 2</ion-select-option>
+              <ion-select-option>Outra 3</ion-select-option>
+              <ion-select-option>Outra 4</ion-select-option>
+              <ion-select-option>Outra 5</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>AMBIENTE</ion-label>
+            <ion-select>
+              <ion-select-option selected>Lótico e artificial</ion-select-option>
+              <ion-select-option>Outra 1</ion-select-option>
+              <ion-select-option>Outra 2</ion-select-option>
+              <ion-select-option>Outra 3</ion-select-option>
+              <ion-select-option>Outra 4</ion-select-option>
+              <ion-select-option>Outra 5</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row style="padding-top: 20px;">
+        <ion-col text-center>
+          <button>
+            <ion-icon name="help-circle" size="large"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col text-left size="9" style="padding-top: 30px;">
+            <ion-progress-bar color="success" value="0.33"></ion-progress-bar>
+        </ion-col>
+      </ion-row>
+      <ion-row style="padding-top: 80px;">
+        <ion-col text-center>
+          <ion-button color="dark">
+            <ion-label>Salvar</ion-label>
+          </ion-button>
+        </ion-col>
+        <ion-col text-center>
+          <ion-button color="dark" 
+          routerLink="/add-macrofita-ii" routerDirection="root">
+            <ion-label>Próximo</ion-label>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
